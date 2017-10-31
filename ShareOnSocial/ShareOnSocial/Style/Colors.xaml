@@ -11,4 +11,7 @@
 	
 	<Color x:Key="Selected">#f18608</Color>
 	<SolidColorBrush x:Key="SelectedBrush" Color="{StaticResource Selected}"/>
+	
+	<Color x:Key="IconForeground">#757575</Color>
+	<SolidColorBrush x:Key="IconForgroundBrush" Color="{StaticResource IconForeground}" />
 </ResourceDictionary>

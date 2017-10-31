@@ -6,8 +6,6 @@ namespace ShareOnSocial.ViewModel
 {
 	public class MainWindowViewModel : BaseViewModel
 	{
-
-
 		#region Private Members
 		private int mTitleHeight = 40;
 		private Window mWindow;

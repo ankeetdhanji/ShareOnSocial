@@ -19,8 +19,8 @@
 	</Style>
 	
 	<!-- normal main window tools bar button -->
-	<Style TargetType="{x:Type Button}"
-		   x:Key="WindowControlButton">
+	<Style  x:Key="WindowControlButton"
+			TargetType="{x:Type Button}">
 		<Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
 		<Setter Property="FontFamily" Value="{StaticResource FontAwesome}" />
 		<Setter Property="FontSize" Value="12" />
@@ -77,14 +77,63 @@
 			</Trigger>
 		</Style.Triggers>
 	</Style>
-	
-	<Style TargetType="{x:Type Button}"
-		   x:Key="WindowCloseButton"
+
+	<!-- windows close button -->
+	<Style x:Key="WindowCloseButton"
+		   TargetType="{x:Type Button}"
 		   BasedOn="{StaticResource WindowControlButton}">
 		<Style.Triggers>
 			<Trigger Property="IsMouseOver" Value="True">
 				<Setter Property="Background" Value="Red" />
 			</Trigger>
 		</Style.Triggers>
+	</Style>
+	
+	<!-- social buttons -->
+	<Style x:Key="SocialButton"
+		   TargetType="{x:Type Button}">
+		<Setter Property="Foreground" Value="{StaticResource IconForgroundBrush}" />
+		<Setter Property="Background" Value="Transparent" />
+		<Setter Property="FontFamily" Value="{StaticResource FontAwesome}" />
+		<Setter Property="FontSize" Value="50" />
+		<Setter Property="HorizontalAlignment" Value="Center" />
+		<Setter Property="Padding" Value="10" />
+		
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type ButtonBase}">
+					<Border Name="border"
+							Background="{TemplateBinding Background}"
+							Padding="{TemplateBinding Padding}">
+						<Viewbox>
+							<TextBlock Name="sbText" 
+									   Text="{TemplateBinding Content}" 
+									   Focusable="False"
+									   FontFamily="{TemplateBinding FontFamily}"
+									   FontSize="{TemplateBinding FontFamily}"
+									   HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+									   VerticalAlignment="{TemplateBinding VerticalAlignment}"/>
+						</Viewbox>
+					</Border>
+					<ControlTemplate.Triggers>
+						<EventTrigger RoutedEvent="MouseEnter">
+							<BeginStoryboard>
+								<Storyboard>
+									<ColorAnimation To="{StaticResource Selected}" Duration="0:0:0.3" Storyboard.TargetName="sbText" Storyboard.TargetProperty="Foreground.Color" />
+								</Storyboard>
+							</BeginStoryboard>
+						</EventTrigger>
+						<EventTrigger RoutedEvent="MouseLeave">
+							<BeginStoryboard>
+								<Storyboard>
+									<ColorAnimation To="{StaticResource IconForeground}" Duration="0:0:0.3" Storyboard.TargetName="sbText" Storyboard.TargetProperty="Foreground.Color" />
+								</Storyboard>
+							</BeginStoryboard>
+						</EventTrigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+		
 	</Style>
 </ResourceDictionary>

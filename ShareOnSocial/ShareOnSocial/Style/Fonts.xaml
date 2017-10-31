@@ -9,4 +9,5 @@
 	<system:String x:Key="MinimizeWindow">&#xf2d1;</system:String>
 	<system:String x:Key="MaximizeWindow">&#xf2d0;</system:String>
 	<system:String x:Key="Close">&#xf00d;</system:String>
+	<system:String x:Key="Add">&#xf055;</system:String>
 </ResourceDictionary>

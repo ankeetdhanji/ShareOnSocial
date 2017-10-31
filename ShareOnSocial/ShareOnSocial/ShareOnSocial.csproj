@@ -58,10 +58,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\SocialListControl.xaml.cs">
+      <DependentUpon>SocialListControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SocialListItemControl.xaml.cs">
+      <DependentUpon>SocialListItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\BaseConverter.cs" />
+    <Compile Include="Converters\IconToFontAwesomeStringConverter.cs" />
     <Compile Include="Expressions\ExpressionHelpers.cs" />
+    <Compile Include="Extensions\IconExtensions.cs" />
+    <Compile Include="Model\Icon.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\RelayCommand.cs" />
+    <Compile Include="ViewModel\Social\Design\SocialListDesignModel.cs" />
+    <Compile Include="ViewModel\Social\Design\SocialListItemDesignModel.cs" />
+    <Compile Include="ViewModel\Social\SocialListViewModel.cs" />
+    <Compile Include="ViewModel\Social\SocialListItemViewModel.cs" />
+    <Page Include="Controls\SocialListControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SocialListItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
