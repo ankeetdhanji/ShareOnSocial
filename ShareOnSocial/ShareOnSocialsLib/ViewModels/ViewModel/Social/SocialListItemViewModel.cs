@@ -61,7 +61,7 @@ namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 		/// </summary>
 		private void OpenSocialSetting()
 		{
-
+			IoC.IoC.Get<SocialListViewModel>().ItemSelected = this;
 		}
 
 		#endregion

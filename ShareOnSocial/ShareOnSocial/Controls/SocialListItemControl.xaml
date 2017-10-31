@@ -8,5 +8,7 @@
              mc:Ignorable="d" 
 			 d:DataContext="{x:Static design:SocialListItemDesignModel.Instance}">
 	<Button Content="{Binding Icon, Converter={converters:IconToFontAwesomeStringConverter}}"
-			Style="{StaticResource SocialButton}"/>
+			Style="{Binding IsSelected, Converter={converters:BoolToStyle}}"
+			Background="{Binding IsSelected, Converter={converters:BoolToBrushConverter}}"
+			Command="{Binding OpenSocialSettingCommand}"/>
 </UserControl>

@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:controls="clr-namespace:ShareOnSocial.Controls"
              xmlns:design="clr-namespace:ShareOnSocialsLib.ViewModels.ViewModel.Social.Design;assembly=ShareOnSocialsLib"
+             xmlns:popUp="clr-namespace:ShareOnSocial.Controls.PopUp"
              mc:Ignorable="d" 
              d:DesignHeight="300"
 			 d:DataContext="{x:Static design:SocialListDesignModel.Instance}">
@@ -18,7 +19,8 @@
 		</Grid.RowDefinitions>
 		
 		<!-- The Social icons -->
-		<ScrollViewer VerticalScrollBarVisibility="Auto">
+		<ScrollViewer VerticalScrollBarVisibility="Auto"
+					  HorizontalAlignment="Left">
 			<ItemsControl ItemsSource="{Binding Items}">
 				<ItemsControl.ItemTemplate>
 					<DataTemplate>
@@ -29,10 +31,16 @@
 
 		</ScrollViewer>
 		
+		<popUp:SocialAddPopUp Grid.Row="1"
+							  HorizontalAlignment="Left"
+							  VerticalAlignment="Bottom"/>
+		
 		<!-- Add button -->
 		<Button Grid.Row="1" 
 				Content="{StaticResource Add}"
 				Style="{StaticResource SocialButton}"
-				Command="{Binding ShowAddMenuCommand}"/>
+				Command="{Binding ShowAddMenuCommand}"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Bottom"/>
 	</Grid>
 </UserControl>

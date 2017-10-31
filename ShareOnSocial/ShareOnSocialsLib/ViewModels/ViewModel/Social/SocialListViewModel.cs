@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows.Input;
 using ShareOnSocialsLib.Commands;
 using ShareOnSocialsLib.Models;
@@ -9,13 +10,33 @@ namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 	/// View model for the social list side bar.
 	/// </summary>
 	public class SocialListViewModel
-	{	
+	{
+		private SocialListItemViewModel mItemSelected;
+
 		#region Public Properties
 
 		/// <summary>
 		/// List of Social List Items
 		/// </summary>
 		public ObservableCollection<SocialListItemViewModel> Items { get; set; }
+
+		/// <summary>
+		/// The current item that is selected from the list.
+		/// </summary>
+		public SocialListItemViewModel ItemSelected
+		{
+			get { return mItemSelected; }
+			set
+			{
+				foreach (SocialListItemViewModel item in Items)
+				{
+					if (item.IsSelected)
+						item.IsSelected = false;
+				}
+				value.IsSelected = true;
+				mItemSelected = value;
+			}
+		}
 
 		#endregion
 
@@ -52,10 +73,7 @@ namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 		private void ShowAddMenu()
 		{
 			//TODO: REPLACE THIS - Create functionality to show the add menu
-			Items.Add(new SocialListItemViewModel()
-			{
-				Icon = Icon.RedditAlien
-			});
+			
 		}
 
 

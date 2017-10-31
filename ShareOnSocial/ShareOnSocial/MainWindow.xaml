@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		mc:Ignorable="d"
         xmlns:shareOnSocial="clr-namespace:ShareOnSocial"
-        xmlns:viewModel="clr-namespace:ShareOnSocial.ViewModel"
         xmlns:controls="clr-namespace:ShareOnSocial.Controls"
+        xmlns:popUp="clr-namespace:ShareOnSocial.Controls.PopUp"
         WindowStyle="None"
 		AllowsTransparency="True"
 		x:Name="AppWindow"
@@ -79,14 +79,14 @@
 	</WindowChrome.WindowChrome>
 
 	<Border Background="{StaticResource BackgroundDarkBrush}">
-	<Grid>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="Auto" />
-			<ColumnDefinition Width="*" />
-		</Grid.ColumnDefinitions>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
 		
-		<!-- Social side bar -->
-		<controls:SocialListControl Grid.Column="0"/>
-	</Grid>
+			<!-- Social side bar -->
+			<controls:SocialListControl Grid.Column="0"/>
+		</Grid>
 	</Border>
 </Window>

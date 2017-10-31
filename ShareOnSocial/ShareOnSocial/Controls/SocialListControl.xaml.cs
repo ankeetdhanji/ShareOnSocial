@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ShareOnSocialsLib.IoC;
 using ShareOnSocialsLib.ViewModels.ViewModel.Social;
 
 namespace ShareOnSocial.Controls
@@ -24,7 +25,7 @@ namespace ShareOnSocial.Controls
 		public SocialListControl()
 		{
 			InitializeComponent();
-			DataContext = new SocialListViewModel();
+			DataContext = IoC.Get<SocialListViewModel>();
 		}
 	}
 }
