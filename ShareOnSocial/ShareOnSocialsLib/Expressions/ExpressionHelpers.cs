@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace ShareOnSocial.Expressions
+namespace ShareOnSocialsLib.Expressions
 {
 	/// <summary>
 	/// Extenders for expressions.

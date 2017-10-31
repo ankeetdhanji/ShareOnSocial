@@ -66,16 +66,7 @@
     </Compile>
     <Compile Include="Converters\BaseConverter.cs" />
     <Compile Include="Converters\IconToFontAwesomeStringConverter.cs" />
-    <Compile Include="Expressions\ExpressionHelpers.cs" />
-    <Compile Include="Extensions\IconExtensions.cs" />
-    <Compile Include="Model\Icon.cs" />
-    <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
-    <Compile Include="ViewModel\RelayCommand.cs" />
-    <Compile Include="ViewModel\Social\Design\SocialListDesignModel.cs" />
-    <Compile Include="ViewModel\Social\Design\SocialListItemDesignModel.cs" />
-    <Compile Include="ViewModel\Social\SocialListViewModel.cs" />
-    <Compile Include="ViewModel\Social\SocialListItemViewModel.cs" />
     <Page Include="Controls\SocialListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -138,7 +129,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ShareOnSocialsLib\ShareOnSocialsLib.csproj">
+      <Project>{f38e7c91-0e60-4ce5-89d0-9d6c5b7b7e6a}</Project>
+      <Name>ShareOnSocialsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="FodyWeavers.xml" />
   </ItemGroup>

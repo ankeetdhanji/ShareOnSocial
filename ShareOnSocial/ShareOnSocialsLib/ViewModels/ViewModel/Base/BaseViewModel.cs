@@ -2,9 +2,9 @@
 using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using ShareOnSocial.Expressions;
+using ShareOnSocialsLib.Expressions;
 
-namespace ShareOnSocial.ViewModel
+namespace ShareOnSocialsLib.ViewModels.ViewModel.Base
 {
 	/// <summary>
 	/// Based view model, Fody weaver triggers property changed events.

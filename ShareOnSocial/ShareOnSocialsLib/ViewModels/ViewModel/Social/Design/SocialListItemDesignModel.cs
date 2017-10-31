@@ -1,7 +1,7 @@
 ﻿using System;
-using ShareOnSocial.Model;
+using ShareOnSocialsLib.Models;
 
-namespace ShareOnSocial.ViewModel.Social.Design
+namespace ShareOnSocialsLib.ViewModels.ViewModel.Social.Design
 {
 	/// <summary>
 	/// View model for the items in the social list side bar.

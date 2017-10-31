@@ -1,6 +1,6 @@
-﻿using ShareOnSocial.Model;
+﻿using ShareOnSocialsLib.Models;
 
-namespace ShareOnSocial.Extensions
+namespace ShareOnSocialsLib.Extensions
 {
 	public static class IconExtensions
 	{

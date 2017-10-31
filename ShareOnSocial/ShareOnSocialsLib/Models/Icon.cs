@@ -1,4 +1,4 @@
-﻿namespace ShareOnSocial.Model
+﻿namespace ShareOnSocialsLib.Models
 {
 	public enum Icon
 	{

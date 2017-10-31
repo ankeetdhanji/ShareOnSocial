@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Windows.Input;
-using ShareOnSocial.Model;
+using ShareOnSocialsLib.Commands;
+using ShareOnSocialsLib.Models;
 
-namespace ShareOnSocial.ViewModel.Social
+namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 {
 	/// <summary>
 	/// View model for the social list side bar.

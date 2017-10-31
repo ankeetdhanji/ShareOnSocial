@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using ShareOnSocial.Model;
+using ShareOnSocialsLib.Models;
 
-namespace ShareOnSocial.ViewModel.Social.Design
+namespace ShareOnSocialsLib.ViewModels.ViewModel.Social.Design
 {
 	/// <summary>
 	/// View model for the in the social list side bar.

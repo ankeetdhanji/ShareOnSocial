@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ShareOnSocial.Extensions;
-using ShareOnSocial.Model;
+using ShareOnSocialsLib.Extensions;
+using ShareOnSocialsLib.Models;
 
 namespace ShareOnSocial.Converters
 {
