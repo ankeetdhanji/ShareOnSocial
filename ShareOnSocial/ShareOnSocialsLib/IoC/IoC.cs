@@ -18,6 +18,7 @@ namespace ShareOnSocialsLib.IoC
 		public override void Load()
 		{
 			Bind<SocialListViewModel>().ToConstant(new SocialListViewModel());
+			Bind<AddSocialPopUpViewModel>().ToConstant(new AddSocialPopUpViewModel());
 		}
 
 		public static T Get<T>()

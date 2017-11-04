@@ -1,4 +1,6 @@
 ﻿using System.Windows.Controls;
+using ShareOnSocialsLib.IoC;
+using ShareOnSocialsLib.ViewModels.ViewModel.Social;
 
 namespace ShareOnSocial.Controls.PopUp
 {

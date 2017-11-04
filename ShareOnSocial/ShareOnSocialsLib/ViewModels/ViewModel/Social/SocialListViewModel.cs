@@ -3,13 +3,14 @@ using System.Linq;
 using System.Windows.Input;
 using ShareOnSocialsLib.Commands;
 using ShareOnSocialsLib.Models;
+using ShareOnSocialsLib.ViewModels.ViewModel.Base;
 
 namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 {
 	/// <summary>
 	/// View model for the social list side bar.
 	/// </summary>
-	public class SocialListViewModel
+	public class SocialListViewModel : BaseViewModel
 	{
 		private SocialListItemViewModel mItemSelected;
 
@@ -38,6 +39,9 @@ namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 			}
 		}
 
+		public AddSocialPopUpViewModel AddSocialPopUpMenu { get; set; }
+		public bool AddSocialPopUpMenuVisible { get; set; }
+
 		#endregion
 
 		#region Public Commands
@@ -57,6 +61,8 @@ namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 		public SocialListViewModel()
 		{
 			Items = new ObservableCollection<SocialListItemViewModel>();
+			AddSocialPopUpMenuVisible = false;
+			AddSocialPopUpMenu = new AddSocialPopUpViewModel();
 
 			// Create commands
 			ShowAddMenuCommand = new RelayCommand(ShowAddMenu);
@@ -73,7 +79,8 @@ namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 		private void ShowAddMenu()
 		{
 			//TODO: REPLACE THIS - Create functionality to show the add menu
-			
+			AddSocialPopUpMenuVisible ^= true;
+			AddSocialPopUpMenu.IsVisible = AddSocialPopUpMenuVisible;
 		}
 
 

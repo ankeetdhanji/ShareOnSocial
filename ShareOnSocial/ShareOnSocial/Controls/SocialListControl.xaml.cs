@@ -22,10 +22,12 @@ namespace ShareOnSocial.Controls
 	/// </summary>
 	public partial class SocialListControl : UserControl
 	{
+		public SocialListViewModel ViewModel { get; set; }
 		public SocialListControl()
 		{
 			InitializeComponent();
-			DataContext = IoC.Get<SocialListViewModel>();
+			ViewModel = IoC.Get<SocialListViewModel>();
+			DataContext = ViewModel;
 		}
 	}
 }

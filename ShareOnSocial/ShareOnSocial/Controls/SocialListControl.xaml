@@ -10,37 +10,42 @@
              d:DesignHeight="300"
 			 d:DataContext="{x:Static design:SocialListDesignModel.Instance}">
 	<Grid>
-		<Grid.RowDefinitions>
-			<!-- social icons -  platforms that we're going to share to. -->
-			<RowDefinition Height="*" />
-			
-			<!-- Add button to add more socials to share too. -->
-			<RowDefinition Height="Auto" />
-		</Grid.RowDefinitions>
-		
-		<!-- The Social icons -->
-		<ScrollViewer VerticalScrollBarVisibility="Auto"
-					  HorizontalAlignment="Left">
-			<ItemsControl ItemsSource="{Binding Items}">
-				<ItemsControl.ItemTemplate>
-					<DataTemplate>
-						<controls:SocialListItemControl />
-					</DataTemplate>
-				</ItemsControl.ItemTemplate>
-			</ItemsControl>
 
-		</ScrollViewer>
-		
-		<popUp:SocialAddPopUp Grid.Row="1"
+		<popUp:SocialAddPopUp Panel.ZIndex="1"
 							  HorizontalAlignment="Left"
-							  VerticalAlignment="Bottom"/>
+							  VerticalAlignment="Bottom"
+							  DataContext="{Binding AddSocialPopUpMenu}"/>
+
+
+		<Grid>
+			<Grid.RowDefinitions>
+				<!-- social icons -  platforms that we're going to share to. -->
+				<RowDefinition Height="*" />
+			
+				<!-- Add button to add more socials to share too. -->
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
 		
-		<!-- Add button -->
-		<Button Grid.Row="1" 
-				Content="{StaticResource Add}"
-				Style="{StaticResource SocialButton}"
-				Command="{Binding ShowAddMenuCommand}"
-				HorizontalAlignment="Left"
-				VerticalAlignment="Bottom"/>
+			<!-- The Social icons -->
+			<ScrollViewer VerticalScrollBarVisibility="Auto"
+						  HorizontalAlignment="Left">
+				<ItemsControl ItemsSource="{Binding Items}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate>
+							<controls:SocialListItemControl />
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+				</ItemsControl>
+
+			</ScrollViewer>
+
+			<!-- Add button -->
+			<Button Grid.Row="1" 
+					Content="{StaticResource Add}"
+					Style="{StaticResource SocialButton}"
+					Command="{Binding ShowAddMenuCommand}"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Bottom"/>
+		</Grid>
 	</Grid>
 </UserControl>

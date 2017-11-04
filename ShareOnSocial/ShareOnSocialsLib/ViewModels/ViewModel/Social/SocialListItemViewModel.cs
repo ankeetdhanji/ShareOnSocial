@@ -1,13 +1,14 @@
 ﻿using System.Windows.Input;
 using ShareOnSocialsLib.Commands;
 using ShareOnSocialsLib.Models;
+using ShareOnSocialsLib.ViewModels.ViewModel.Base;
 
 namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 {
 	/// <summary>
 	/// View model for the social list item side bar.
 	/// </summary>
-	public class SocialListItemViewModel
+	public class SocialListItemViewModel : BaseViewModel
 	{
 		#region Private Member Variables
 
