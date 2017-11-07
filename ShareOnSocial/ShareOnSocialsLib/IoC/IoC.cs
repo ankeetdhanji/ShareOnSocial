@@ -15,6 +15,8 @@ namespace ShareOnSocialsLib.IoC
 
 		public static IKernel Kernel { get { return mKernel; } }
 
+		public static SocialListViewModel SocialListViewModel { get { return Get<SocialListViewModel>(); } }
+
 		public override void Load()
 		{
 			Bind<SocialListViewModel>().ToConstant(new SocialListViewModel());

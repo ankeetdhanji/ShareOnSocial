@@ -15,18 +15,21 @@
 				Content="{StaticResource RedditAlien}" 
 				Margin="55,143,85,0" Height="60" Width="60"
 				Tag="55,143,85,0"
-				animations:AnimateSlideInFromBottomLeftProperty.Value="{Binding IsVisible}"/>
+				animations:AnimateSlideInFromBottomLeftProperty.Value="{Binding IsVisible}"
+				Command="{Binding AddRedditCommand}"/>
 		<Button Style="{StaticResource SocialButton}"
 				Content="{StaticResource FacebookF}"
 				Height="60" Width="60" Margin="55,85,85,55"
 				Tag="55,85,85,55"
-				animations:AnimateSlideInFromBottomLeftProperty.Value="{Binding IsVisible}"/>
+				animations:AnimateSlideInFromBottomLeftProperty.Value="{Binding IsVisible}"
+				Command="{Binding AddFacebookCommand}"/>
 		<Button Style="{StaticResource SocialButton}"
 				Content="{StaticResource TwitterBird}"
 				Margin="-5,85,145,55" 
 				Tag="-5,85,145,55"
 				Height="60" Width="60" 
-				animations:AnimateSlideInFromBottomLeftProperty.Value="{Binding IsVisible}"/>
+				animations:AnimateSlideInFromBottomLeftProperty.Value="{Binding IsVisible}"
+				Command="{Binding AddTwitterCommand}"/>
 
 	</Grid>
 </UserControl>

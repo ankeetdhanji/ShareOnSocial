@@ -18,6 +18,11 @@
 		/// <summary>
 		/// Element slides and fades out to bottom left corner.
 		/// </summary>
-		SlideAndFadeOutToBottomLeftCorner
+		SlideAndFadeOutToBottomLeftCorner,
+
+		/// <summary>
+		/// Element slides and fades in from te left.
+		/// </summary>
+		SlideAndFadeInFromLeft
 	}
 }

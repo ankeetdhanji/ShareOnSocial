@@ -64,6 +64,7 @@
     </ApplicationDefinition>
     <Compile Include="Animations\AnimationType.cs" />
     <Compile Include="Animations\FrameworkElementAnimations.cs" />
+    <Compile Include="AttachedProperties\Animations\AnimateSlideInFromLeftProperty.cs" />
     <Compile Include="AttachedProperties\Animations\AnimateSlideInFromBottomLeftProperty.cs" />
     <Compile Include="AttachedProperties\Animations\BaseAnimationProperty.cs" />
     <Compile Include="AttachedProperties\BaseAttachedProperty.cs" />

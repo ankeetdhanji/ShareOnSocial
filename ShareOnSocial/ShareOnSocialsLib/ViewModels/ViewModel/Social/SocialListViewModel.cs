@@ -78,7 +78,6 @@ namespace ShareOnSocialsLib.ViewModels.ViewModel.Social
 		/// </summary>
 		private void ShowAddMenu()
 		{
-			//TODO: REPLACE THIS - Create functionality to show the add menu
 			AddSocialPopUpMenuVisible ^= true;
 			AddSocialPopUpMenu.IsVisible = AddSocialPopUpMenuVisible;
 		}
