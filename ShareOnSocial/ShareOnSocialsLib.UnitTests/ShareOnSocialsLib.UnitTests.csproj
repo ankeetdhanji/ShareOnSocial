@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F8EA4C0-BCDF-4E2E-892E-15D9EAF139F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ShareOnSocialsLib.UnitTests</RootNamespace>
+    <AssemblyName>ShareOnSocialsLib.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="FakeItEasy">
+      <HintPath>..\packages\FakeItEasy.4.2.0\lib\net45\FakeItEasy.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShareOnSocialsLib\ShareOnSocialsLib.csproj">
+      <Project>{F38E7C91-0E60-4CE5-89D0-9D6C5B7B7E6A}</Project>
+      <Name>ShareOnSocialsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Components\WebServices\" />
+    <Folder Include="Components\WebServices\Twitter\" />
+    <Folder Include="TestHelpers\" />
+    <Folder Include="Components\WebServices\Posters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Utilities\SignatureGeneratorTests.cs" />
+    <Compile Include="Components\WebServices\Twitter\TwitterAuthorizerTests.cs" />
+    <Compile Include="TestHelpers\FakeFactory.cs" />
+    <Compile Include="Components\WebServices\Posters\TwitterPosterTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

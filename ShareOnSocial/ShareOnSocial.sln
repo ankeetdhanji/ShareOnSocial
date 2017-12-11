@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareOnSocial", "ShareOnSoc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareOnSocialsLib", "ShareOnSocialsLib\ShareOnSocialsLib.csproj", "{F38E7C91-0E60-4CE5-89D0-9D6C5B7B7E6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareOnSocialsLib.UnitTests", "ShareOnSocialsLib.UnitTests\ShareOnSocialsLib.UnitTests.csproj", "{2F8EA4C0-BCDF-4E2E-892E-15D9EAF139F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F38E7C91-0E60-4CE5-89D0-9D6C5B7B7E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F38E7C91-0E60-4CE5-89D0-9D6C5B7B7E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F38E7C91-0E60-4CE5-89D0-9D6C5B7B7E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F8EA4C0-BCDF-4E2E-892E-15D9EAF139F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F8EA4C0-BCDF-4E2E-892E-15D9EAF139F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F8EA4C0-BCDF-4E2E-892E-15D9EAF139F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F8EA4C0-BCDF-4E2E-892E-15D9EAF139F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

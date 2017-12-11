@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{2F8EA4C0-BCDF-4E2E-892E-15D9EAF139F8}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShareOnSocialsLib/WebServices/Posters/TwitterPoster.cs">
+    <Files>
+      <File FileName="ShareOnSocialsLib.UnitTests/Components/WebServices/Twitter/TwitterAuthorizerTests.cs" Line="25" Column="62" />
+      <File FileName="ShareOnSocialsLib/WebServices/Authorizers/TwitterAuthorizer.cs" Line="49" Column="54" />
+      <File FileName="ShareOnSocialsLib/WebServices/Posters/TwitterPoster.cs" Line="77" Column="44" />
+      <File FileName="ShareOnSocialsLib/WebServices/Posters/ISocialPoster.cs" Line="23" Column="37" />
+      <File FileName="ShareOnSocialsLib.UnitTests/Components/WebServices/Posters/TwitterPosterTests.cs" Line="135" Column="35" />
+      <File FileName="ShareOnSocialsLib/WebServices/Http/HttpManager.cs" Line="1" Column="1" />
+      <File FileName="ShareOnSocialsLib/WebServices/Http/IHttpManager.cs" Line="8" Column="22" />
+      <File FileName="ShareOnSocialsLib/WebServices/Authorizers/IAuthorizer.cs" Line="10" Column="9" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib.UnitTests/WebServices/TwitterCommunicatorTests.cs" relfile="ShareOnSocialsLib.UnitTests/WebServices/TwitterCommunicatorTests.cs" line="19" column="36" />
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib.UnitTests/WebServices/TwitterCommunicatorTests.cs" relfile="ShareOnSocialsLib.UnitTests/WebServices/TwitterCommunicatorTests.cs" line="17" column="1" />
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib.UnitTests/Components/TwitterCommunicatorTests.cs" relfile="ShareOnSocialsLib.UnitTests/Components/TwitterCommunicatorTests.cs" line="19" column="39" />
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib.UnitTests/Components/TwitterCommunicatorTests.cs" relfile="ShareOnSocialsLib.UnitTests/Components/TwitterCommunicatorTests.cs" line="18" column="1" />
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib.UnitTests/Components/WebServices/Twitter/TwitterAuthorizerTests.cs" relfile="ShareOnSocialsLib.UnitTests/Components/WebServices/Twitter/TwitterAuthorizerTests.cs" line="27" column="1" />
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib.UnitTests/Components/WebServices/Twitter/TwitterAuthorizerTests.cs" relfile="ShareOnSocialsLib.UnitTests/Components/WebServices/Twitter/TwitterAuthorizerTests.cs" line="25" column="1" />
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib.UnitTests/Components/WebServices/Twitter/TwitterAuthorizerTests.cs" relfile="ShareOnSocialsLib.UnitTests/Components/WebServices/Twitter/TwitterAuthorizerTests.cs" line="16" column="1" />
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib.UnitTests/Utilities/SignatureGeneratorTests.cs" relfile="ShareOnSocialsLib.UnitTests/Utilities/SignatureGeneratorTests.cs" line="30" column="1" />
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib/WebServices/Posters/TwitterPoster.cs" relfile="ShareOnSocialsLib/WebServices/Posters/TwitterPoster.cs" line="120" column="1" />
+      <Breakpoint file="/Users/ankeetdhanji/Documents/GitHub/ShareOnSocial/ShareOnSocial/ShareOnSocialsLib/WebServices/Posters/TwitterPoster.cs" relfile="ShareOnSocialsLib/WebServices/Posters/TwitterPoster.cs" line="131" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="ShareOnSocialsLib/WebServices/TwitterCommunicator.cs" line="42" offsetX="617" offsetY="615" expression="json" liveUpdate="False" />
+    <Watch file="ShareOnSocialsLib/WebServices/TwitterCommunicator.cs" line="60" offsetX="153" offsetY="994" expression="json" liveUpdate="False" />
+    <Watch file="ShareOnSocialsLib/WebServices/TwitterCommunicator.cs" line="58" offsetX="74" offsetY="1024" expression="json" liveUpdate="False" />
+    <Watch file="ShareOnSocialsLib/Utilities/SignatureGenerator.cs" line="13" offsetX="12" offsetY="266" expression="parameters" liveUpdate="False" />
+    <Watch file="ShareOnSocialsLib/WebServices/TwitterCommunicator.cs" line="60" offsetX="228" offsetY="937" expression="json" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.ShareOnSocialsLib.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
